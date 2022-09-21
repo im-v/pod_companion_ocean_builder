@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "dev-48x48.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -9,7 +8,6 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "dev-55x55.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -17,14 +15,12 @@
       "subtype" : "42mm"
     },
     {
-      "filename" : "dev-58x58.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "dev-87x87.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "3x",
@@ -38,7 +34,6 @@
       "subtype" : "45mm"
     },
     {
-      "filename" : "dev-80x80.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -46,7 +41,6 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "dev-88x88.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -61,7 +55,6 @@
       "subtype" : "41mm"
     },
     {
-      "filename" : "dev-100x100.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -76,7 +69,6 @@
       "subtype" : "45mm"
     },
     {
-      "filename" : "dev-172x172.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -84,7 +76,6 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "dev-196x196.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -92,7 +83,6 @@
       "subtype" : "42mm"
     },
     {
-      "filename" : "dev-216x216.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -107,7 +97,6 @@
       "subtype" : "45mm"
     },
     {
-      "filename" : "dev-1024x1024.png",
       "idiom" : "watch-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
