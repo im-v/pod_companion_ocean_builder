@@ -1,0 +1,12 @@
+//
+//  HomeAssistant.overrides.xcconfig
+//  HomeAssistant
+//
+//  Created by M55 on 22/09/22.
+//  Copyright © 2022 Home Assistant. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+DEVELOPMENT_TEAM = NH53NCT5B2
+BUNDLE_ID_PREFIX = com.oceanbuilders.podcompanion
