@@ -596,6 +596,7 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>CallServiceIntent</string>
+		<string>INSendMessageIntent</string>
 		<string>FireEventIntent</string>
 		<string>GetCameraImageIntent</string>
 		<string>OpenPageIntent</string>
