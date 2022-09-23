@@ -105,7 +105,7 @@ class OnboardingErrorViewController: UIViewController {
     }
 
     private func documentationURL(for error: Error) -> URL {
-        var string = "https://companion.home-assistant.io/docs/troubleshooting/errors"
+        var string = ""
 
         if let error = error as? OnboardingAuthError {
             string += "#\(error.kind.documentationAnchor)"

@@ -23,45 +23,58 @@ class OnboardingWelcomeViewController: UIViewController, OnboardingViewControlle
         let (_, stackView, equalSpacers) = UIView.contentStackView(in: view, scrolling: true)
 
         stackView.addArrangedSubview(equalSpacers.next())
-        stackView.addArrangedSubview(with(AnimationView(animation: .named("ha-loading"))) {
-            animationView = $0
-            $0.loopMode = .playOnce
+//        stackView.addArrangedSubview(with(AnimationView(animation: .named("ha-loading"))) {
+//            animationView = $0
+//            $0.loopMode = .playOnce
+//
+//            NSLayoutConstraint.activate([
+//                with($0.widthAnchor.constraint(equalToConstant: 240.0)) {
+//                    $0.priority = .defaultHigh
+//                },
+//                $0.widthAnchor.constraint(lessThanOrEqualToConstant: 240.0),
+//                $0.widthAnchor.constraint(equalTo: $0.heightAnchor),
+//            ])
+//        })
+        
+        let podCom = UIImage(named: "Logo.png")
 
-            NSLayoutConstraint.activate([
-                with($0.widthAnchor.constraint(equalToConstant: 240.0)) {
-                    $0.priority = .defaultHigh
-                },
-                $0.widthAnchor.constraint(lessThanOrEqualToConstant: 240.0),
-                $0.widthAnchor.constraint(equalTo: $0.heightAnchor),
-            ])
-        })
+        let myImageView:UIImageView = UIImageView()
+        myImageView.contentMode = UIView.ContentMode.scaleAspectFit
+        myImageView.frame.size.width = 200
+        myImageView.frame.size.height = 200
+        myImageView.center = self.view.center
+
+        myImageView.image = podCom
+
+        //view.addSubview(myImageView)
+        stackView.addArrangedSubview(myImageView)
 
         stackView.addArrangedSubview(with(UILabel()) {
             $0.text = L10n.Onboarding.Welcome.title(Current.device.systemName())
             Current.style.onboardingTitle($0)
         })
 
-        stackView.addArrangedSubview(with(UILabel()) {
-            $0.text = L10n.Onboarding.Welcome.description
-            $0.font = .preferredFont(forTextStyle: .body)
-            $0.textColor = Current.style.onboardingLabelSecondary
-            $0.textAlignment = .center
-            $0.numberOfLines = 0
-        })
-        stackView.addArrangedSubview(with(UIButton(type: .system)) {
-            $0.setAttributedTitle(NSAttributedString(
-                string: L10n.Nfc.List.learnMore,
-                attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue]
-            ), for: .normal)
-            $0.titleLabel?.font = .preferredFont(forTextStyle: .body)
-            $0.setTitleColor(Current.style.onboardingLabelSecondary, for: .normal)
-            $0.addTarget(self, action: #selector(learnMoreTapped(_:)), for: .touchUpInside)
-
-            UIView.performWithoutAnimation { [button = $0] in
-                // Prevent the button from fading in initially
-                button.layoutIfNeeded()
-            }
-        })
+//        stackView.addArrangedSubview(with(UILabel()) {
+//            $0.text = L10n.Onboarding.Welcome.description
+//            $0.font = .preferredFont(forTextStyle: .body)
+//            $0.textColor = Current.style.onboardingLabelSecondary
+//            $0.textAlignment = .center
+//            $0.numberOfLines = 0
+//        })
+//        stackView.addArrangedSubview(with(UIButton(type: .system)) {
+//            $0.setAttributedTitle(NSAttributedString(
+//                string: L10n.Nfc.List.learnMore,
+//                attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue]
+//            ), for: .normal)
+//            $0.titleLabel?.font = .preferredFont(forTextStyle: .body)
+//            $0.setTitleColor(Current.style.onboardingLabelSecondary, for: .normal)
+//            $0.addTarget(self, action: #selector(learnMoreTapped(_:)), for: .touchUpInside)
+//
+//            UIView.performWithoutAnimation { [button = $0] in
+//                // Prevent the button from fading in initially
+//                button.layoutIfNeeded()
+//            }
+//        })
 
         stackView.addArrangedSubview(equalSpacers.next())
 
@@ -90,7 +103,7 @@ class OnboardingWelcomeViewController: UIViewController, OnboardingViewControlle
 
     @objc private func learnMoreTapped(_ sender: UIButton) {
         present(
-            SFSafariViewController(url: .init(string: "http://www.home-assistant.io")!),
+            SFSafariViewController(url: .init(string: "")!),
             animated: true,
             completion: nil
         )
