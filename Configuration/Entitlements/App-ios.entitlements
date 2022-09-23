@@ -34,6 +34,9 @@
 	<key>com.apple.security.application-groups</key>
 	<array>
 		<string>group.$(BUNDLE_ID_PREFIX).homeassistant$(BUNDLE_ID_SUFFIX)</string>
+		<string>group.NH53NCT5B2</string>
+		<string>group.NH53NCT5B2.beta-nc</string>
+		<string>group.com.oceanbuilders.podcompanion</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
