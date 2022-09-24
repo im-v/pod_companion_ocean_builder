@@ -271,7 +271,7 @@ Home Assistant is free and open source home automation software with a focus on 
 "settings.connection_section.external_base_url.placeholder" = "https://homeassistant.mójdom.pl";
 "settings.connection_section.external_base_url.title" = "Zewnętrzny adres URL";
 "settings.connection_section.header" = "Połączenie";
-"settings.connection_section.home_assistant_cloud.title" = "Chmura Home Assistant";
+"settings.connection_section.home_assistant_cloud.title" = "Chmura Pod Companion";
 "settings.connection_section.internal_base_url.placeholder" = "np. http://homeassistant.local:8123/";
 "settings.connection_section.internal_base_url.title" = "Wewnętrzny adres URL";
 "settings.connection_section.internal_url_hardware_addresses.add_new_ssid" = "Add New Hardware Address";
